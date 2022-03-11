@@ -28,3 +28,7 @@ const showMore = document.getElementById('scenarios-more'),
           showMore.style.display = 'none';
           refreshOffers.style.margin= '20px 0px 0px 0px';
       });
+
+new WOW().init();
+
+new universalParallax().init();

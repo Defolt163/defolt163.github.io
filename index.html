@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="css/universal-parallax.min.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -45,7 +47,7 @@
         </div>
         <img src="images/svg/wave-down.svg" alt="wave-down" class="wave-down">
     </section>
-    <section id="scenarios-menu221" class="scenarios">
+    <section id="scenarios-menu221" class="scenarios wow animate__animated animate__fadeInUp data-wow-delay="0.5s"">
         <div class="container">
             <div class="scenarios__wrapper">
                 <div class="scenarios_header">Let`s Go!</div>
@@ -127,7 +129,7 @@
         <div class="container">
             <div class="offers_wrapper">
                 <div class="offers__levels">
-                    <div class="offers__level">
+                    <div class="offers__level wow animate__animated animate__lightSpeedInRight">
                         <div class="offer__img">
                             <img src="images/img/photo2.jpg" alt="friends" class="offer_img">
                         </div>
@@ -135,10 +137,10 @@
                             <div class="offer__descr_header">Discount up to 
                                 50% All Excursions</div>
                             <div class="offer__descr_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
-                            <div class="btn btn_offer">Read More</div>
+                            <button class="btn btn_offer">Read More</button>
                         </div>
                     </div>
-                    <div class="offers__level offers__level_1">
+                    <div class="offers__level offers__level_1 wow animate__animated animate__lightSpeedInLeft ">
                         <div class="offer__img">
                             <img src="images/img/photo4.jpg" alt="friends" class="offer_img">
                         </div>
@@ -146,14 +148,14 @@
                             <div class="offer__descr_header">Discount up to 
                                 50% All Excursions</div>
                             <div class="offer__descr_text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</div>
-                            <div class="btn btn_offer">Read More</div>
+                            <button class="btn btn_offer">Read More</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="tours">
+    <section class="tours wow animate__animated animate__slideInUp data-wow-delay="0.5s"">
         <img src="images/svg/wave-up.svg" alt="wave-up" class="wave-up">
         <div class="container">
             <div class="tours_wrapper">
@@ -164,7 +166,8 @@
         <img src="images/img/bg2.png" alt="" class="bg_element bg_element_tours">
         <img src="images/svg/wave-down.svg" alt="wave-down" class="wave-down">
     </section>
-    <section class="action">
+    <section id="parallax-scene" class="action wow animate__animated animate__slideInUp data-wow-delay="0.1s"">
+        <div class="parallax" data-parallax-image="images/img/bg3.jpg"></div>
         <img src="images/svg/wave-up.svg" alt="wave-up" class="wave-up">
         <div class="container">
             <div class="action_wrapper">
@@ -177,19 +180,19 @@
         <div class="container">
             <div class="quote__wrapper">
                 <div class="feedback">
-                    <div class="feedback__card">
+                    <div class="feedback__card wow animate__animated animate__rotateInUpLeft data-wow-delay="0.5s"">
                         <div class="feedback__card_header">lorem ipsum</div>
                         <div class="feedback__card_descr">Lorem ipsum dolor sit amet, consecte
                             sectetur adipisicing elit, tation omne 
                             ullamco laboris nisi ut aliqolore.</div>
                     </div>
-                    <div class="feedback__card">
+                    <div class="feedback__card wow animate__animated animate__rotateInUpLeft data-wow-delay="0.5s"">
                         <div class="feedback__card_header">lorem ipsum</div>
                         <div class="feedback__card_descr">Lorem ipsum dolor sit amet, consecte
                             sectetur adipisicing elit, tation omne 
                             ullamco laboris nisi ut aliqolore.</div>
                     </div>
-                    <div class="feedback__card">
+                    <div class="feedback__card wow animate__animated animate__rotateInUpLeft data-wow-delay="0.5s"">
                         <div class="feedback__card_header">lorem ipsum</div>
                         <div class="feedback__card_descr">Lorem ipsum dolor sit amet, consecte
                             sectetur adipisicing elit, tation omne 
@@ -235,6 +238,10 @@
 
 
 
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/universal-parallax.min.js"></script>
+    <script src="js/wow.min.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

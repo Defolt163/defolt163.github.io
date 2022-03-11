@@ -16,8 +16,22 @@ header
                 font-weight: bold
                 letter-spacing: 3.33px
                 .menu__item_link
+                    position: relative
                     text-decoration: none
                     color: #54524f
+                    &::after
+                        content: ''
+                        transition: width 0.5s
+                        width: 0%
+                        position: absolute
+                        height: 1px
+                        bottom: 0
+                        left: 0
+                        background: #000
+                    &:hover
+                        &::after
+                            transition: width 0.5s
+                            width: 100%
             .humburger
                 display: none
                 span
