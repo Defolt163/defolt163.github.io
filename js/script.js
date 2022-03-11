@@ -17,7 +17,7 @@ const menu = document.querySelector(".menu_list"),
               menu.classList.toggle('menu_list-active');
               fixBody.classList.toggle('body-fixed');
             } else{
-              fixBody.classList.add('');
+              fixBody.classList.add('body-free');
             }
             
           })
