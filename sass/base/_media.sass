@@ -1,0 +1,84 @@
+@media screen and ( max-width: 1980px )
+    .quote
+        .quote__wrapper 
+            .quote__passage
+                margin-top: 50px
+
+@media screen and ( max-width: 1450px )
+    .bg_element
+        width: 50vw
+
+@media screen and ( max-width: 992px )
+    header
+        margin-top: 100px
+        .header__wrapper
+            top: 0
+            left: 0
+            z-index: 99
+            background-color: #fff
+            position: fixed
+            width: 100%
+            .menu
+                .menu_list
+                    position: absolute
+                    transition: all 0.5s
+                    right: -100%
+                    overflow: hidden
+                    opacity: 100%
+                    display: flex
+                    padding: 20vh 0 20vh 0
+                    transition: right 0.5s
+                    flex-direction: column
+                    justify-content: space-between
+                    align-items: center
+                    top: 0
+                    width: 80vw
+                    background-color: rgba(0, 0, 0, 0.5)
+                    height: 100vh
+                    .menu__item_link
+                        z-index: 99
+                        color: #fff
+                        font-size: calc(calc( 1vw + 1vh )* 2)
+                    &-active
+                        right: 0
+                        background-color: rgba(0, 0, 0, 0.5)
+                        height: 100vh
+                .humburger
+                    display: flex !important
+                    flex-direction: column
+                    justify-content: space-between
+                    position: absolute
+                    right: 5%
+                    z-index: 9999
+                    height: 30px
+    footer
+        height: 200px !important
+        padding-top: 100px !important
+
+@media screen and ( max-width: 767px )
+    .scenarios
+        .scenarios__wrapper
+            .scenarios__card_block
+                flex-wrap: wrap
+                .scenarios__card
+                    width: 49%
+                    margin-bottom: 10px
+    .offers
+        margin-top: 50px
+        .offers_wrapper
+            .offers__levels
+                .offers__level
+                    .offer__img
+                        overflow: hidden
+                        .offer_img
+                            transform: scale(2)
+    footer 
+        .footer_wrapper 
+            .footer__descr
+                width: 50%
+    
+
+
+
+
+

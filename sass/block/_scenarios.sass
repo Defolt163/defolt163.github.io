@@ -1,0 +1,152 @@
+.scenarios
+    position: relative
+    &__wrapper
+        display: flex
+        flex-direction: column
+        align-items: center
+        .scenarios_header
+            font-size: calc(calc( 1vw + 1vh )* 2.5)
+            font-weight: 800
+            text-align: center
+            color: #e2a355
+        .scenarios_subheader
+            font-weight: normal
+            text-align: center
+            color: #7f7770
+            margin-bottom: 80px
+        .scenarios__card_block
+            display: flex
+            justify-content: space-between
+            margin-bottom: 55px
+            .scenarios__card
+                width: 30%
+                &_wrapper
+                    width: 100%
+                    .card__img
+                        width: 100%
+                    .card__descr
+                        display: flex
+                        flex-direction: column
+                        justify-content: center
+                        min-height: 220px
+                        background-color: #7f7770
+                        width: 100%
+                        padding: 14px 14px 10px 14px
+                        .card__header
+                            font-weight: bold
+                            color: #fff
+                            margin-bottom: 20px
+                        .card__subheader
+                            font-size: calc(calc( 1vw + 1vh )* .7)
+                            color: #fff
+
+.offers
+    margin-top: 180px
+    &_wrapper
+        .offers__levels
+            .offers__level
+                height: auto
+                display: flex
+                .offer__img
+                    width: 50%
+                    img
+                        width: 100%
+                .offer__descr
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    padding: 20px
+                    width: 50%
+                    background-color: #7f7770
+                    &_header
+                        font-size: calc(calc( 1vw + 1vh )* 1.5)
+                        font-weight: bold
+                        text-align: left
+                        color: #fff
+                    &_text
+                        margin: 50px 0 50px 0
+                        text-align: left
+                        color: #fff
+                &_1
+                    flex-direction: row-reverse
+                    margin-bottom: 40px
+                    .offer__descr
+                        background-color: #deb37e
+        
+@media screen and ( max-width: 769px )
+    .scenarios
+        .scenarios__wrapper
+            .scenarios__card_block
+                flex-wrap: wrap
+                .scenarios__card
+                    .card__descr
+                        .card__header
+                            font-size: calc(calc( 1vw + 1vh )* 1.8)
+                        .card__subheader
+                            font-size: calc(calc( 1vw + 1vh )* 1.2)
+    .offers
+        .offers_wrapper 
+            .offers__levels 
+                .offers__level 
+                    .offer__descr_text
+                        font-size: calc(calc( 1vw + 1vh )* 1.2)
+
+@media screen and ( max-width: 767px )
+    .scenarios
+        .scenarios__wrapper
+            .scenarios__card_block
+                flex-wrap: wrap
+                .scenarios__card
+                    width: 49%
+                    margin-bottom: 10px
+    .offers
+        margin-top: 50px
+        .offers_wrapper
+            .offers__levels
+                .offers__level
+                    .offer__img
+                        overflow: hidden
+                        .offer_img
+                            transform: scale(2) translateY(16%)
+@media screen and ( max-width: 424px )
+    .scenarios
+        .scenarios__wrapper
+            .scenarios__card_block
+                flex-wrap: wrap
+                .scenarios__card
+                    width: 49%
+                    margin-bottom: 10px
+    .offers
+        margin-top: 50px
+        .offers_wrapper
+            .offers__levels
+                .offers__level
+                    .offer__img
+                        overflow: hidden
+                        .offer_img
+                            transform: scale(2.3) translateY(20%)
+@media screen and ( max-width: 380px )
+    .scenarios
+        .scenarios__wrapper
+            .scenarios__card_block
+                flex-wrap: nowrap
+                flex-direction: column
+                .scenarios__card
+                    width: 100%
+                    margin-bottom: 10px
+                    .card__descr
+                        min-height: 150px
+    .offers
+        margin-top: 50px
+        .offers_wrapper
+            .offers__levels
+                .offers__level
+                    flex-direction: column
+                    .offer__img
+                        overflow: hidden
+                        width: 100%
+                        .offer_img
+                            transform: scale(1) translateY(0)
+                    .offer__descr
+                        width: 100%
+                        align-items: center

@@ -1,0 +1,87 @@
+.quote
+    position: relative
+    padding: 25px 0 200px 0
+    &__wrapper
+        .feedback
+            display: flex
+            justify-content: space-between
+            &__card
+                width: 30%
+                &_header
+                    margin-bottom: 30px
+                    font-weight: bold
+                    line-height: 0.99
+                    color: #deb37e
+                    font-size: calc(calc( 1vw + 1vh )* 1.1)
+                &_descr
+                    line-height: 1.35
+                    color: #333d42
+                    font-size: calc(calc( 1vw + 1vh )* .6)
+        .quote__passage
+            margin-top: 250px
+            &_wrapper
+                .marks
+                    font-weight: bold
+                    text-align: center
+                    color: #3f3f3f
+                    font-size: calc(calc( 1vw + 1vh )* 5)
+                .quote__text
+                    font-size: calc(calc( 1vw + 1vh )* .7)
+                    font-weight: 600
+                    text-align: center
+                    color: #3f3f3f
+                .quote__author
+                    margin-top: 60px
+                    font-weight: bold
+                    line-height: 1.6
+                    text-align: center
+                    color: #3f3f3f
+
+footer
+    padding-top: 200px
+    position: relative
+    height: 400px
+    background-color: #7f7770
+    .footer_wrapper
+        z-index: 1
+        display: flex
+        justify-content: space-between
+        .footer__descr
+            width: 40%
+            .descr__header
+                color: #fff
+            .descr__text
+                font-size: calc(calc( 1vw + 1vh )* .7)
+                color: #fff
+        .footer__navigation
+            width: 30%
+            &_wrapper
+                display: flex
+                justify-content: space-between
+                .navigation__item
+                    text-decoration: none
+                    color: #fff
+
+@media screen and ( max-width: 1450px )
+    .quote
+        .quote__wrapper 
+            .feedback__card_descr
+                font-size: calc(calc( 1vw + 1vh )* 0.8)
+            .quote__passage_wrapper 
+                .quote__text
+                    font-size: calc(calc( 1vw + 1vh )* 1)
+                .quote__author
+                    font-size: calc(calc( 1vw + 1vh )* 1.2)
+
+@media screen and ( max-width: 992px )
+    footer
+        height: 200px
+        padding-top: 100px
+
+@media screen and ( max-width: 767px )
+    .quote
+        padding: 25px 0 90px 0
+    footer 
+        .footer_wrapper 
+            .footer__descr
+                width: 50%

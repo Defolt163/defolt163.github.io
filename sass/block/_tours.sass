@@ -1,0 +1,58 @@
+.tours
+    display: flex
+    align-items: center
+    background-color: #7f7770
+    position: relative
+    min-height: 770px
+    &_wrapper
+        position: relative
+        z-index: 1
+        display: flex
+        flex-direction: column
+        align-items: center
+        .tour__header
+            color: #fff
+            font-size: calc(calc( 1vw + 1vh )* 2.5)
+            text-align: center
+        .tour__subheader
+            text-align: center
+            color: #dbdbdb
+
+.action
+    position: relative
+    min-height: 1100px
+    background: url(../images/img/bg3.jpg) center center/cover no-repeat
+    display: flex
+    flex-direction: column
+    justify-content: center
+    &_wrapper
+        display: flex
+        justify-content: flex-end
+        position: relative
+        z-index: 1
+        .action_call
+            width: 40%
+            text-shadow: 2.6px -4.3px 5px rgba(84, 82, 79, 0.36)
+            font-family: OpenSans
+            font-size: calc(calc( 1vw + 1vh )* 3)
+            font-weight: 800
+            font-style: italic
+            text-align: right
+            color: #deb37e
+            line-height: 87px
+            span
+                color: #54524f
+                font-size: calc(calc( 1vw + 1vh )* 2.5)
+                font-weight: 800
+                font-style: italic
+
+
+@media screen and ( max-width: 1450px )
+    .action
+        min-height: 720px
+
+@media screen and ( max-width: 992px )
+    .tours
+        min-height: 440px
+    .action
+        min-height: 514px

@@ -1,0 +1,84 @@
+header
+    z-index: 3
+    .header__wrapper
+        height: 100px
+        .menu
+            height: 100%
+            display: flex
+            justify-content: center
+            align-items: center
+            &_list
+                width: 100%
+                display: flex
+                list-style: none
+                justify-content: space-between
+                font-family: OpenSans
+                font-weight: bold
+                letter-spacing: 3.33px
+                .menu__item_link
+                    text-decoration: none
+                    color: #54524f
+            .humburger
+                display: none
+                span
+                    transition: all 0.5s
+                    border-radius: 15px
+                    height: 6px
+                    width: 56px
+                    background-color: #000
+                    opacity: 100
+                &-active
+                    span
+                        transition: all 0.5s
+                        background-color: #fff !important
+                        &:nth-last-of-type(1)
+                            transform: rotate(45deg) translate(-10px, -8px)
+                        &:nth-last-of-type(3)
+                            transform: rotate(-45deg) translate(-10px, 5px)
+                        &:nth-last-of-type(2)
+                            opacity: 0
+.promo
+    padding-top: 240px
+    min-height: 1157px
+    width: 100%
+    background: url(../images/img/bg1-1.jpg) center center/cover no-repeat
+    position: relative
+    &__wrapper
+        width: 60%
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        .promo__text
+            .promo_header
+                text-shadow: 2.6px -4.3px 5px rgba(84, 82, 79, 0.22)
+                font-family: OpenSans
+                font-size: calc(calc( 1vw + 1vh )* 3.8)
+                font-weight: 800
+                color: #deb37e
+                text-align: left
+            .promo_subheader
+                text-align: left
+                font-weight: bold
+                font-style: italic
+                letter-spacing: 5px
+                color: #54524f
+                margin-bottom: 66px
+            .promo_descr
+                margin-top: 26px
+                text-align: left
+                font-weight: normal
+                font-style: italic
+                letter-spacing: 1.05px
+                color: #54524f
+
+@media screen and ( max-width: 992px )
+    .promo
+        min-height: 850px 
+@media screen and ( max-width: 652px )
+    header
+        .header__wrapper
+            height: 60px
+
+    .promo
+        min-height: 524px 
+        padding-top: 77px
