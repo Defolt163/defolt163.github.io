@@ -31,4 +31,3 @@ const showMore = document.getElementById('scenarios-more'),
 
 new WOW().init();
 
-new universalParallax().init();

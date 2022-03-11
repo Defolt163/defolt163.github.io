@@ -21,6 +21,8 @@
 .action
     position: relative
     min-height: 1100px
+    background: url(../images/img/bg3.jpg) center center/cover no-repeat
+    background-attachment: fixed
     display: flex
     flex-direction: column
     justify-content: center
@@ -55,3 +57,12 @@
         min-height: 440px
     .action
         min-height: 514px
+
+@media screen and ( max-width: 399px )
+    .action
+        &_wrapper
+            .action_call
+                line-height: 35px
+                font-size: calc(calc( 1vw + 1vh )* 3)
+                span
+                    font-size: calc(calc( 1vw + 1vh )* 2.1)
