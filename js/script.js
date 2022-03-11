@@ -9,11 +9,17 @@ const menu = document.querySelector(".menu_list"),
           fixBody.classList.toggle('body-fixed');
       });
 
+      
       menuItem.forEach(item =>{
           item.addEventListener('click', () =>{
-            humburger.classList.toggle("humburger-active");
-            menu.classList.toggle('menu_list-active');
-            fixBody.classList.toggle('body-fixed');
+            if (humburger == document.querySelector(".humburger-active")){
+              humburger.classList.toggle("humburger-active");
+              menu.classList.toggle('menu_list-active');
+              fixBody.classList.toggle('body-fixed');
+            } else{
+              fixBody.classList.add('');
+            }
+            
           })
       });
       
