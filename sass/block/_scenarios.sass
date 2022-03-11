@@ -18,10 +18,12 @@
             display: flex
             justify-content: space-between
             margin-bottom: 55px
-            &-hidden
-                display: none
+            flex-wrap: wrap
             .scenarios__card
                 width: 30%
+                margin-bottom: 10px
+                &-hidden
+                    display: none
                 &_wrapper
                     width: 100%
                     .card__img
@@ -74,6 +76,57 @@
                     margin-bottom: 40px
                     .offer__descr
                         background-color: #deb37e
+
+/* CARD IMAGE ADAPTATION */
+@media screen and ( min-width: 1440px )
+    .scenarios
+        &__wrapper
+            .scenarios__card_block
+                .scenarios__card
+                    &_wrapper
+                        .card__img
+                            height: 340px
+@media screen and ( min-width: 1200px )
+    .scenarios
+        &__wrapper
+            .scenarios__card_block
+                .scenarios__card
+                    &_wrapper
+                        .card__img
+                            height: 273px
+@media screen and ( min-width: 992px )
+    .scenarios
+        &__wrapper
+            .scenarios__card_block
+                .scenarios__card
+                    &_wrapper
+                        .card__img
+                            height: 250px !important
+@media screen and ( min-width: 768px )
+    .scenarios
+        &__wrapper
+            .scenarios__card_block
+                .scenarios__card
+                    &_wrapper
+                        .card__img
+                            height: 187px
+@media screen and ( max-width: 767px )
+    .scenarios
+        &__wrapper
+            .scenarios__card_block
+                .scenarios__card
+                    &_wrapper
+                        .card__img
+                            height: 227px
+@media screen and ( max-width: 575px )
+    .scenarios
+        &__wrapper
+            .scenarios__card_block
+                .scenarios__card
+                    &_wrapper
+                        .card__img
+                            height: auto
+
         
 @media screen and ( max-width: 769px )
     .scenarios

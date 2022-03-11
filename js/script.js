@@ -18,11 +18,13 @@ const menu = document.querySelector(".menu_list"),
       });
       
 const showMore = document.getElementById('scenarios-more'),
-      hiddensCard = document.querySelector(".scenarios__card_block-hidden"),
+      hiddensCard = document.querySelectorAll(".scenarios__card-hidden"),
       refreshOffers = document.querySelector(".offers");
 
       showMore.addEventListener('click', () =>{
-          hiddensCard.classList.remove('scenarios__card_block-hidden');
+          hiddensCard.forEach(card =>{
+            card.classList.remove('scenarios__card-hidden');
+          })
           showMore.style.display = 'none';
           refreshOffers.style.margin= '20px 0px 0px 0px';
       });
