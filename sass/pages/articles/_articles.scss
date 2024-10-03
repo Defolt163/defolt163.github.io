@@ -1,0 +1,50 @@
+.article-content{
+    h1{
+        font-weight : 400;
+        margin-bottom: 5px;
+    }
+    .section-subtitle{
+        margin-top: 50px;
+        text-align: left;
+    }
+    .date{
+        margin-bottom: 10px;
+    }
+    .article-image{
+        width: 50%;
+        float: left;
+        margin: 0 10px 10px 0
+    }
+    
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .article-text{
+        .article-listgroup{
+            list-style-type: none;
+            li{
+                display: flex;
+                .list-item{
+                    margin-right: 5px;
+                }
+                &:last-child{
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 992px) {
+	.article-content{
+        .fullwidth-block{
+            padding: 20px 0;
+        }
+        .article-image{
+            width: 100%;
+            float: none;
+            margin: 0 0 10px 0
+        }
+	}
+  }
